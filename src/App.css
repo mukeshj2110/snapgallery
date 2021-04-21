@@ -1,38 +1,66 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root{
+  --light-pink: lightpink;
+  --light-gray: gray;
+  --red: red;
+}
+
+body{
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--light-gray) ;
+}
+
+.App{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.title h1{
+  color: var(--light-pink);
+  font-size: 1.5rem;
+  letter-spacing: 2.5px;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+
+.title h2{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+
+
+.title p{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.uploadimg input{
+  display: none;
+  cursor: pointer;
+  border-radius: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.uploadimg span{
+  color: var(--light-pink);
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 1rem;
+  margin-left: 380px;
+  margin-right: 380px;
+  width: 120px;
+  height: auto;
+  border-radius: 2px;
+
+  
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.output{
+  text-align: center;
+  font-size: 0.8rem;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
