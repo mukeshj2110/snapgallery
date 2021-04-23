@@ -64,3 +64,9 @@ body{
 
 }
 
+.progress-bar{
+  height: 3px;
+  background-color: var(--light-pink);
+  margin-top: 20px;
+}
+
