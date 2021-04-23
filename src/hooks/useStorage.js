@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { imgstorage } from "../firebase_config";
+import { imgstorage  } from "../firebase_config";
 
 const useStorage = (file) => {
   const [progress, setProgress] = useState(0);
@@ -9,6 +9,7 @@ const useStorage = (file) => {
   useEffect(() => {
     const storageRef = imgstorage.ref(`uploads/${file.name}`).put(file);
 
+    
     storageRef.on(
       "state changed",
       (snap) => {
@@ -23,10 +24,13 @@ const useStorage = (file) => {
           .ref("uploads")
           .child(file.name)
           .getDownloadURL()
+         
           .then((url) => {
             setUrl(url);
             console.log(url);
           });
+
+          
       }
     );
   }, [file]);

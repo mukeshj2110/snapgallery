@@ -29,12 +29,12 @@ const Uploadimg = () => {
       <form>
         <label className="inp">
           <input type="file" onChange={changeHandler} />
-          <span className="plus">+</span>
+          <div className="plus">+</div>
         </label>
         <div className="output">
           {error && <div className="error">{error}</div>}
           {file && <div className="file">{file.name}</div>}
-          {file && <ProgressBar file={file} />}
+          {file && <ProgressBar file={file}  setFile={setFile}  />}
         </div>
       </form>
     </div>
