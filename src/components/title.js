@@ -2,11 +2,17 @@ import React from 'react';
 
 
 
+
+
 export default function Title() {
+
+  
     return (
         <div className="title">
             <div className="heading">
             <h1>SnapGallery</h1>
+          
+
             </div>
             
             <h2>Your Memories</h2>
